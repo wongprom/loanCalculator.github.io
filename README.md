@@ -1,5 +1,5 @@
 # A Simple UI Loan Calculator
-[Go To GitHub-Pages](https://wongprom.github.io/loanCalculator.github.io/)
+[Go To GitHub-Pages](https://wongprom.github.io/loanCalculator.github.io/) For This Project.
 
 ## What Does This Calculater Calculates ?
 
