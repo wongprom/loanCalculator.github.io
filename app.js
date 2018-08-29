@@ -48,6 +48,11 @@ function calculateResults() {
 
 //Show Error
 function showError(error) {
+  //Hide loader
+  document.querySelector('#loading').style.display = 'none';
+
+  //Hide results
+  document.querySelector('#results').style.display = 'none';
   //Create a div
   const errorDiv = document.createElement('div');
 
