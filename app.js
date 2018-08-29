@@ -50,6 +50,14 @@ function showError(error) {
   //Create text nod and append do div
   errorDiv.appendChild(document.createTextNode(error));
 
-  //Insert error above heading
+  //Insert error above heading, must be Before a parent element
   ELcard.insertBefore(errorDiv, ELheading);
+
+  //Clear error message after 2 sec
+  setTimeout(clearError, 2000);
+}
+
+//Clear Error
+function clearError() {
+  document.querySelector('.alert').remove();
 }
