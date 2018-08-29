@@ -29,8 +29,27 @@ function calculateResults(e) {
       2
     );
   } else {
-    console.log('Pleas check your number input..');
+    showError('Pleas check your number');
   }
 
   e.preventDefault();
+}
+
+//Show Error
+function showError(error) {
+  //Create a div
+  const errorDiv = document.createElement('div');
+
+  //Get elements from html
+  const ELcard = document.querySelector('.card');
+  const ELheading = document.querySelector('.heading');
+
+  //Add bootstrap classes to div
+  errorDiv.className = 'alert alert-danger';
+
+  //Create text nod and append do div
+  errorDiv.appendChild(document.createTextNode(error));
+
+  //Insert error above heading
+  ELcard.insertBefore(errorDiv, ELheading);
 }
